@@ -14,7 +14,10 @@ function OnPlayButtonDown() {
   if (randomDieOne > randomDieTwo) {
     document.querySelector(".heading").textContent = "Player 1 Won!";
   }
-  else {
+  else if (randomDieOne < randomDieTwo){
     document.querySelector(".heading").textContent = "Player 2 Won!";
+  }
+  else {
+    document.querySelector(".heading").textContent = "It's a Tie!";
   }
 }
